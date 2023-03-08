@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shandu-GIS</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="logo/Shandu.jpg" alt="Doctor Shandu">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>  
+        <!--<a href="https://idcossa.github.io/GEOG7029_SA_Mapping/" target="_blank">SA: Web Map</a> -->
+        
+        
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <!--<div class="fas fa-shopping-cart" id="cart-btn"></div> REMOVE--> 
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+ 
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+
+<section class="home" id="home">
+
+    <div class="content">      
+
+        
+    </div>    
+
+</section>
+
+<!-- home section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading"><span> Comparison Between RF and SVM for LULC classification, Nelson Mandela Bay </span> South Africa</h1>
+    <h1 class="heading"> GIS Industrial Project <span>CPUT </span> </h1>
+    
+    <!--<h1 class="heading"> Study finding <span>Appendix</span> </h1>-->
+    <p class="heading">
+        <a href="https://code.earthengine.google.com/?accept_repo=users/idcossa/Research_Project" target="_blank"> Google Earth Engine Code</a> 
+    </p>
+    
+
+    <div class="box-container">
+        <!--ISSUE KZN-->
+      <div class="box">
+        <div class="image">
+            <img src="Images/Reflectance_AllBands.png" alt="">
+        </div>
+        <div class="content">
+            <a href="#" class="title">Signature Plot</a>
+            <span> </span>
+            <p> Signature Plot for Sentinel-2 Bands B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11 and B12 respectively. The signature plot was computed to select bands which are appropriate for the LULC classification model, selecting bands and removing unnecessary bands. Shows the significance of each band, and B2, B3, B4, and B8 were selected and used to compute the colour composite and creating the training and testing samples.</p>
+            <a href="Images/Reflectance_AllBands.png" target="_blank" class="btn">View</a>
+        </div>
+     </div>
+
+       <!--ISSUE KZN-->
+       <div class="box">
+        <div class="image">
+            <img src="Images/Reflectance.png" alt="">
+        </div>
+        <div class="content">
+            <a href="#" class="title">Signature Plot</a>
+            <span> </span>
+            <p> Figure shows the signature plot surface reflectance for each class such as Water, Agriculture, Urban/Built-Up, Forest, Sparse vegetation, Barren Land and Sand Beach in spectral bands B2, B3, B4, B8 and B9. </p>
+            <a href="Images/Reflectance.png" target="_blank" class="btn">View</a>
+        </div>
+     </div>
+      
+
+        
+
+        
+
+      
+    </div>
+
+
+
+
+    <div class="box-container">
+        <!--ISSUE KZN-->
+        <div class="box">
+            <div class="image">
+                <img src="Images/colour_composite.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Colour Composite</a>
+                <span> </span>
+                <p> Sentinel Satellite image colour composite was then used to analyse the image class and prepare the image for creating training and testing dataset. True and False colour image composite were computed based on band combination of B8, B4 and B3 for False Colour and B4, B3 and B2 for True Colour. Training and testing samples were as water = 40, built-up = 55, forest = 55, sparse vegetation = 60, agriculture = 76, bare soil = 38 and sand beach = 23. The ratio of 70% training and 30% validation was applied to training the classifier and testing the performance of the classifier. </p>
+                <a href="Images/colour_composite.jpg" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="Images/indexes.jpg" alt="">
+        </div>
+        <div class="content">
+            <a href="#" class="title">Index Calculation</a>
+            <span> </span>
+            <p> NDVI is a widely known vegetation index that is often used to signifies the health of vegetation, other known vegetation index is Enhanced Vegetation Index (EVI), Ration Vegetation Index (RVI) and Perpendicular Vegetation Index (PVI). NDBI is the index method which has not gained famous like NDVI. NDBI is used to highlight the built-up areas, like NDVI this model have its own formula. Other form of built-up index include Build-Up Index (BU) or Urban Index (UI). NDWI is used to enhance water bodies in most cases. Water has low reflectance and decreases from visible portion of spectrum. NDWI and MNDWI are widely used to highlight water, there is differentiated phenomenon between NDWI and MNDWI where MNDWI strongly highlight water than NDWI.   </p>
+            <a href="Images/indexes.jpg" target="_blank" class="btn">View</a>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="box-container">
+      
+
+        <div class="box">
+            <div class="image">
+                <img src="Images/classifcation.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Classification</a>
+                <span> </span>
+                <p> Finally, the LULC map were produced based on RF and SVM ML classifiers. Based on Figure, one can conclude the variability of LULC classes, where sparse vegetation is spread across the region and dominantly occurs in the northern part of the district. Based on the LULC classified map in Figure 8, NMB was classified into 7 different classes such as water bodies, built-up areas, forests, sparse vegetation, agriculture, barren land, and sand beaches. Some of the classes such as forest, sparse vegetation, and agriculture; bare land and sand were differentiated based on the reflectance of each pixel.  </p>
+                <a href="Images/classifcation.jpg" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="Images/Area_Table.JPG" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Class</a>
+                <span> </span>
+                <p>  Based on Table below, the dominant class is sparse vegetation in both RF and SVM, where it accounts for 730 〖km〗^2 for RF and 745 〖km〗^2 for SVM, followed by forest 681 〖km〗^2 and 721 〖km〗^2 for RF and SVM and NMB is least dominated by sand beach in both RF 21 〖km〗^2 and SVM 24 〖km〗^2. The statistics summary is represented in Figure by pie chart which demonstrate the classes and area accountability.</p>
+                <a href="Images/Area_Table.JPG" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+       
+
+    </div>
+
+
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="Images/Area.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Classes Area</a>
+                <span> </span>
+                <p>There is an aggrement is area associated with each class for RF and SVM, where class areas increase proportionally between the algorithms classification. </p>
+                <a href="Images/Area.png" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="Images/rf_matrix.JPG" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Random Forest Accuracy</a>
+                <span> </span>
+                <p> RF classification produced validation overall accuracy of 84% with a training accuracy of 98.44% with Out of Bag Error Estimate = 0.13 for 60 trees.
+                    </p>
+                <a href="Images/rf_matrix.JPG" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="Images/svm_matrix.JPG" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Support Vector Machine Accuracy</a>
+                <span> </span>
+                <p> SVM classification produced an overall accuracy of 91% with a training accuracy of 94.24%. it can be concluded that SVm outperfome RF for the given models.</p>
+                <a href="Images/svm_matrix.JPG" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    
+    <div class="credit">created by <span>Doctor Shandu: 218213654 </span>| idcossa@gmail.com | GIS Industrial Project</div>
+
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
